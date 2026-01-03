@@ -7,6 +7,6 @@ export const config = {
 
 // The function name can be whatever you want
 // Technically you don't even need to specify the name
-export default function pingCommand(interaction: CommandInteraction) {
-  interaction.reply("Pong!"); // This will send a simple message back to the user
+export default async function pingCommand(interaction: CommandInteraction) {
+  await interaction.reply("Pong!"); // This will send a simple message back to the user
 }
